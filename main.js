@@ -75,7 +75,7 @@ function activateClock() {
       clock.save();
       clock.translate(0, -30);
       clock.rotate(-angle);
-      for(i=0;i,12;i+4){
+      
       //Adding Numbers as the loop runs
       clock.font = '40px Monospace';
       clock.fillText(i,-16,14);
