@@ -31,7 +31,6 @@ function activateClock() {
   clock.lineWidth = 8
   drawHands(clockWidth/3, hr * 30);
   
-  
   var min = date.getMinutes();
   clock.strokeStyle = "#c6c6cc";
   clock.lineWidth = 6
@@ -49,7 +48,7 @@ function activateClock() {
   function drawCircle(){
     //Draw the Inner Smaller Circle
    clock.beginPath();
-   clock.arc(cenX,cenY,4,0, 2 * Math.PI ,false);
+   clock.arc(cenX,cenY,10,0, 2 * Math.PI ,false);
    clock.strokeStyle = "black"
    clock.fill();
    clock.closePath();
@@ -87,9 +86,7 @@ function activateClock() {
       clock.stroke();
       clock.closePath();
       clock.restore();
-  
-    
-  
+      
       i--
     } 
   }
